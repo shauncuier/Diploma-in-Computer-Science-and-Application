@@ -1,3 +1,5 @@
+// Three numbers A, B and C are given. Find the smallest among these three numbers.
+
 #include <stdio.h>
 int main()
 {

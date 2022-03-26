@@ -1,3 +1,4 @@
+// Given the temperature C in the centigrade scale. Find its value F in the Fahrenheit scale.
 
 #include<stdio.h>
 int main()

@@ -1,3 +1,5 @@
+// Two numbers A and B are given. Find their Difference.
+
 #include<stdio.h>
 int main()
 {
