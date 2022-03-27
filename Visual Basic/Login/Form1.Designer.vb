@@ -50,6 +50,7 @@ Partial Class Form1
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.TextBox1.Location = New System.Drawing.Point(173, 82)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(259, 27)
@@ -57,6 +58,7 @@ Partial Class Form1
         '
         'TextBox2
         '
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.TextBox2.Location = New System.Drawing.Point(173, 141)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(259, 27)
@@ -64,21 +66,23 @@ Partial Class Form1
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.Chartreuse
         Me.Button1.Location = New System.Drawing.Point(173, 252)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(108, 37)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "OK"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.Red
         Me.Button2.Location = New System.Drawing.Point(310, 252)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(122, 37)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "Cancel"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -87,7 +91,6 @@ Partial Class Form1
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange
         Me.BackColor = System.Drawing.Color.ForestGreen
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.ControlBox = False
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox2)
