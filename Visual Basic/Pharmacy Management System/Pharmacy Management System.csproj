@@ -55,6 +55,12 @@
     <Compile Include="Adminstator.Designer.cs">
       <DependentUpon>Adminstator.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminstratorUC\UC_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminstratorUC\UC_Dashboard.Designer.cs">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Adminstator.resx">
       <DependentUpon>Adminstator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminstratorUC\UC_Dashboard.resx">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

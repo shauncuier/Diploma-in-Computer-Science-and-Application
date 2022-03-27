@@ -19,6 +19,34 @@ namespace Pharmacy_Management_System
 
         private void Adminstator_Load(object sender, EventArgs e)
         {
+            uC_Dashboard2.Visible = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            uC_Dashboard2.Visible=true;
+            uC_Dashboard2.BringToFront();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Form1 fm = new Form1();
+            fm.Show();
+            this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
