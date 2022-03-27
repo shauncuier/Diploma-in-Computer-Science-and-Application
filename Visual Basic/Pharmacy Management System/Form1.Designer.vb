@@ -26,16 +26,16 @@ Partial Class Form1
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.btnExit = New Guna.UI2.WinForms.Guna2Button()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
+        Me.btnSingin = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnReset = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,22 +72,6 @@ Partial Class Form1
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Pharmacy " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Management " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "System"
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(1326, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(42, 40)
-        Me.Button1.TabIndex = 1
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(225, Byte), Integer))
@@ -109,20 +93,20 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(690, 293)
+        Me.Label2.Font = New System.Drawing.Font("Roboto", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(820, 341)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(140, 35)
+        Me.Label2.Size = New System.Drawing.Size(152, 34)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "User Name"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(690, 386)
+        Me.Label3.Font = New System.Drawing.Font("Roboto", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(820, 434)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(122, 35)
+        Me.Label3.Size = New System.Drawing.Size(136, 34)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Password"
         '
@@ -136,49 +120,84 @@ Partial Class Form1
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Sing in"
         '
-        'TextBox1
+        'txtPassword
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox1.ForeColor = System.Drawing.Color.Black
-        Me.TextBox1.Location = New System.Drawing.Point(690, 337)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(411, 34)
-        Me.TextBox1.TabIndex = 7
+        Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtPassword.ForeColor = System.Drawing.Color.Black
+        Me.txtPassword.Location = New System.Drawing.Point(820, 485)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword.Size = New System.Drawing.Size(344, 34)
+        Me.txtPassword.TabIndex = 8
         '
-        'TextBox2
+        'btnExit
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox2.ForeColor = System.Drawing.Color.Black
-        Me.TextBox2.Location = New System.Drawing.Point(690, 425)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(411, 34)
-        Me.TextBox2.TabIndex = 8
+        Me.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnExit.FillColor = System.Drawing.Color.White
+        Me.btnExit.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnExit.ForeColor = System.Drawing.Color.White
+        Me.btnExit.Image = CType(resources.GetObject("btnExit.Image"), System.Drawing.Image)
+        Me.btnExit.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnExit.Location = New System.Drawing.Point(1319, 12)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(49, 41)
+        Me.btnExit.TabIndex = 11
         '
-        'Button2
+        'txtUsername
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(778, 483)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 29)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Sing in"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.txtUsername.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtUsername.ForeColor = System.Drawing.Color.Black
+        Me.txtUsername.Location = New System.Drawing.Point(820, 388)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(344, 34)
+        Me.txtUsername.TabIndex = 12
         '
-        'Button3
+        'btnSingin
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(952, 483)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(94, 29)
-        Me.Button3.TabIndex = 10
-        Me.Button3.Text = "Reset"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnSingin.BorderRadius = 19
+        Me.btnSingin.BorderThickness = 1
+        Me.btnSingin.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnSingin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnSingin.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnSingin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnSingin.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnSingin.Font = New System.Drawing.Font("Roboto", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnSingin.ForeColor = System.Drawing.Color.White
+        Me.btnSingin.HoverState.BorderColor = System.Drawing.Color.Black
+        Me.btnSingin.HoverState.FillColor = System.Drawing.Color.White
+        Me.btnSingin.HoverState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.btnSingin.Image = CType(resources.GetObject("btnSingin.Image"), System.Drawing.Image)
+        Me.btnSingin.ImageSize = New System.Drawing.Size(40, 40)
+        Me.btnSingin.Location = New System.Drawing.Point(829, 574)
+        Me.btnSingin.Name = "btnSingin"
+        Me.btnSingin.Size = New System.Drawing.Size(146, 45)
+        Me.btnSingin.TabIndex = 13
+        Me.btnSingin.Text = "Log in"
+        '
+        'btnReset
+        '
+        Me.btnReset.BorderRadius = 19
+        Me.btnReset.BorderThickness = 1
+        Me.btnReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnReset.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnReset.Font = New System.Drawing.Font("Roboto", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnReset.ForeColor = System.Drawing.Color.White
+        Me.btnReset.HoverState.BorderColor = System.Drawing.Color.Black
+        Me.btnReset.HoverState.FillColor = System.Drawing.Color.White
+        Me.btnReset.HoverState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.btnReset.Image = CType(resources.GetObject("btnReset.Image"), System.Drawing.Image)
+        Me.btnReset.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnReset.Location = New System.Drawing.Point(1012, 574)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(146, 45)
+        Me.btnReset.TabIndex = 14
+        Me.btnReset.Text = "Reset"
         '
         'Form1
         '
@@ -186,16 +205,16 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1380, 770)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.btnReset)
+        Me.Controls.Add(Me.btnSingin)
+        Me.Controls.Add(Me.txtUsername)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
@@ -213,14 +232,14 @@ Partial Class Form1
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents btnExit As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents txtUsername As TextBox
+    Friend WithEvents btnSingin As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnReset As Guna.UI2.WinForms.Guna2Button
 End Class
