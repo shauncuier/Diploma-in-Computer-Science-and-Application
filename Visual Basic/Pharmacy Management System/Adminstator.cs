@@ -20,6 +20,7 @@ namespace Pharmacy_Management_System
         private void Adminstator_Load(object sender, EventArgs e)
         {
             uC_Dashboard2.Visible = false;
+            btnDashboard.PerformClick();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
