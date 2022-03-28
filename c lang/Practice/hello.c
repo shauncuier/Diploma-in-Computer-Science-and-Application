@@ -2,10 +2,9 @@
 int main()
 {
     double a, b, sum;
-    a = 9.5;
-    b = 8.743;
+    scanf("%lf", &a);
+    scanf("%lf", &b);
     sum = a + b;
-    printf("Sum is: %lf\n", sum);
-    printf("Sum is: %0.4lf\n", sum);
+    printf("Sum is: %0.2lf\n", sum);
     return 0;
 }
