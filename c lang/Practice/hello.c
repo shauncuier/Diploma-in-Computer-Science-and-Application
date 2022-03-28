@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    double a, b, sum;
-    scanf("%lf", &a);
-    scanf("%lf", &b);
-    sum = a + b;
-    printf("Sum is: %0.2lf\n", sum);
+    char ch;
+    printf("Enter the first letter of your name: ");
+    scanf("%c", &ch);
+    printf("The first letter of your name is: %c\n", ch);
+
     return 0;
 }
