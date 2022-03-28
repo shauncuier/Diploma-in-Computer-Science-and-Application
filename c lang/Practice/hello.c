@@ -1,14 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    // test program ­ comment 1
-    printf("Hello ");
-    /* We have printed Hello,
-    now we shall print World.
-    Note that this is a multi­line comment */
-    printf("World"); // printed world
+    int n;
+    n= 0;
+        if(n < 0) {
+        printf("The number is negative\n");
+    }
+     else if (n > 0) {
+        printf("The number is positive\n");
+    }
+    else if (n == 0) {
+        printf("The number is zero!\n");
+    }
+
     return 0;
-
-
-
 }
