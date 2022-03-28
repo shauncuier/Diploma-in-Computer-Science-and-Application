@@ -1,16 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    int n;
-    n= 0;
-        if(n < 0) {
-        printf("The number is negative\n");
+    int number, remainder;
+
+    number = 6;
+
+    remainder = number % 2;
+
+    if(remainder == 0) {
+        printf("The number is even\n");
     }
-     else if (n > 0) {
-        printf("The number is positive\n");
-    }
-    else if (n == 0) {
-        printf("The number is zero!\n");
+    else {
+        printf("The number is odd\n");
     }
 
     return 0;
