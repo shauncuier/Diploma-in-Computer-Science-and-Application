@@ -2,11 +2,12 @@
 #include <stdio.h>
 int main()
 {
-    int x,y;
-    x =1;
-    y = x;
-    x = 2;
-    printf("%i", y);
+    int a = 50, b = 60, sum;
+
+    sum = a+b;
+
+
+    printf("%d+%d=%d",a,b,sum);
 
     return 0;
 }
