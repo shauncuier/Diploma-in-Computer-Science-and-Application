@@ -1,18 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    int number, remainder;
-
-    number = 6;
-
-    remainder = number % 2;
-
-    if(remainder == 0) {
-        printf("The number is even\n");
+    char ch = 'w';
+    if(ch >= 'a' && ch <= 'z') {
+        printf("%c is lower case\n", ch);
     }
-    else {
-        printf("The number is odd\n");
+    if(ch >= 'A' && ch <= 'Z') {
+        printf("%c is upper case\n", ch);
     }
-
     return 0;
+
 }
