@@ -2,14 +2,14 @@
 #include <stdio.h>
 int main()
 {
-    int a , b, sum;
+    int a , b, c;
 
     a = 40;
     b=30;
-    sum = a+b;
+    c = a+b;
     printf ("a = %i ", a);
     printf ("b = %i ", b);
-    printf("Sum is %d ",sum);
+    printf("Sum is %d ",c);
 
 
 
