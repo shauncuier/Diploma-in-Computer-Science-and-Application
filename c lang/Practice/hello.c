@@ -1,25 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int num1, num2, value;
-    char sign;
-    printf("Please enter a number: ");
-    scanf("%d", &num1);
-    printf("Please enter another number: ");
-    scanf("%d", &num2);
-    value = num1 + num2;
-    sign = '+';
-    printf("%d %c %d = %d\n", num1, sign, num2, value);
-    value = num1 - num2;
-    sign = '-';
-    printf("%d %c %d = %d\n", num1, sign, num2, value);
-    value = num1 * num2;
-    sign = '*';
-    printf("%d %c %d = %d\n", num1, sign, num2, value);
-    value = num1 / num2;
-    sign = '/';
-    printf("%d %c %d = %d\n", num1, sign, num2, value);
+    // test program ­ comment 1
+    printf("Hello ");
+    /* We have printed Hello,
+    now we shall print World.
+    Note that this is a multi­line comment */
+    printf("World"); // printed world
     return 0;
+
 
 
 }
