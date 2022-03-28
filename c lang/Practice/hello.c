@@ -9,5 +9,6 @@ int main()
         printf("%c is upper case\n", ch);
     }
     return 0;
+    
 
 }
