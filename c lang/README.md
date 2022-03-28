@@ -101,7 +101,7 @@
             return 0;
         }
 
-## C programming Sum 2.7
+## C programming 2.7
 <br> 
 
     #include <stdio.h>
@@ -117,7 +117,7 @@
         }
 
 
-## C programming Sum 2.8
+## C programming 2.8
 <br> 
 
     #include <stdio.h>
@@ -140,7 +140,7 @@
         }
 
 
-## C programming Sum 2.9
+## C programming 2.9
 <br> 
 
 
@@ -156,7 +156,7 @@
             return 0;
         }
 
-## C programming Sum 2.10
+## C programming 2.10
 <br> 
 
     #include <stdio.h>
@@ -171,7 +171,7 @@
         }
 
 
-## C programming Sum 2.11
+## C programming 2.11
 <br> 
 
 
@@ -187,7 +187,7 @@
         }
 
 
-## C programming Sum 2.12
+## C programming 2.12
 <br> 
 
     #include <stdio.h>
@@ -200,7 +200,7 @@
             return 0;
         }
 
-## C programming Sum 2.13
+## C programming 2.13
 <br> 
 
     #include <stdio.h>
@@ -213,7 +213,7 @@
             return 0;
         }
 
-## C programming Sum 2.14
+## C programming 2.14
 <br> 
 
     #include <stdio.h>
@@ -233,7 +233,7 @@
         }
 
 
-## C programming Sum 2.15
+## C programming 2.15
 <br> 
 
 
@@ -262,7 +262,7 @@
         }
 
 
-## C programming Sum 2.16
+## C programming 2.16
 <br> 
 
     #include <stdio.h>
