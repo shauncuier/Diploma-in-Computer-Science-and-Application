@@ -2,17 +2,10 @@
 #include <stdio.h>
 int main()
 {
-    int a , b, c;
+    int a = 5, b = 7, sum;
 
-    a = 40;
-    b=30;
-    c = a+b;
-    printf ("a = %i ", a);
-    printf ("b = %i ", b);
-    printf("Sum is %d ",c);
-
-
-
+    sum = a + b;
+    printf("Sum is %i", sum);
 
     return 0;
 }
