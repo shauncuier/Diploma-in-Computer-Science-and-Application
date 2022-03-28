@@ -1,14 +1,15 @@
 #include <stdio.h>
 int main()
 {
-    char ch = 'w';
-    if(ch >= 'a' && ch <= 'z') {
-        printf("%c is lower case\n", ch);
+    int num = 50;
+    if(num >= 1 || num <= 10) {
+        printf("yes\n");
     }
-    if(ch >= 'A' && ch <= 'Z') {
-        printf("%c is upper case\n", ch);
+    else {
+        printf("no\n");
     }
     return 0;
-    
+
+
 
 }
