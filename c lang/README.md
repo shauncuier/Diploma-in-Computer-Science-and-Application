@@ -5,7 +5,7 @@
         int main()
         {
         
-        return 0;
+            return 0;
         }
 
 ## C programming 1.1
