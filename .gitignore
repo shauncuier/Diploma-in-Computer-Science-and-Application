@@ -5,3 +5,5 @@ obj
 *.exe
 *.o
 *.bak
+
+*.doc
