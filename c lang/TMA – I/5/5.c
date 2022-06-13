@@ -1,0 +1,1 @@
+//5.	Write a program to find the length of the hypotenuse of a right triangle given the length of other two sides.

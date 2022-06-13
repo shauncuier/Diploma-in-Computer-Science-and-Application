@@ -1,0 +1,1 @@
+//8.	Write a program to calculate the roots of the quadratic equation: ax2 + bx + c = 0 where a, b and c are known.
