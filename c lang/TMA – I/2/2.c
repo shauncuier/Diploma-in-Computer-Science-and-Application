@@ -9,7 +9,6 @@ printf("\nEnter radius of circle: ");
 scanf("%d",&rad);
 ci=2*PI*rad;
 printf("\nCircumference: %f\n",ci);
-system("pause");
 
 return (0);
 }
