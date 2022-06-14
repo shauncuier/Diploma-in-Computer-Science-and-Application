@@ -3,7 +3,7 @@
 #include <stdio.h>
 int main()
 {
-    int a, b, add, sub, mult,divi;
+    int a, b, add, sub, mult, divi;
     scanf("%d%d",&a,&b);
 
     add = a+b;
@@ -11,10 +11,10 @@ int main()
     mult = a*b;
     divi = a/b;
    
-    printf("The addition is %d \n", add);
-    printf("The subtraction is %d \n", sub);
-    printf("The multiplication  is %d \n", mult);
-    printf("The division  is %d \n", divi);
+    printf("The addition is %d\n", add);
+    printf("The subtraction is %d\n", sub);
+    printf("The multiplication  is %d\n", mult);
+    printf("The division  is %d\n", divi);
 
     return 0;
 }
