@@ -1,4 +1,4 @@
-//1.	Write a program to find the addition, subtraction, multiplication and division Modulas of two integers A and B.
+//1.	Write a program to find the addition, subtraction, multiplication and division modulas of two integers A and B.
 
 #include <stdio.h>
 int main()
@@ -10,7 +10,7 @@ int main()
     sub = a-b;
     mult = a*b;
     divi = a/b;
-   
+
     printf("The addition is %d\n", add);
     printf("The subtraction is %d\n", sub);
     printf("The multiplication  is %d\n", mult);
