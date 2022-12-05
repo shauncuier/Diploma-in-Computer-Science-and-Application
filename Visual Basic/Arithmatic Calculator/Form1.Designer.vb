@@ -44,7 +44,8 @@ Partial Class Form1
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.Location = New System.Drawing.Point(338, 70)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(149, 38)
+        Me.Label1.Padding = New System.Windows.Forms.Padding(5)
+        Me.Label1.Size = New System.Drawing.Size(159, 48)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Calculator"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -53,34 +54,40 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(185, 181)
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(188, 181)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(3)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(55, 20)
+        Me.Label2.Size = New System.Drawing.Size(77, 30)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Input 1"
+        Me.Label2.Text = "Value 1"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(185, 227)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(188, 227)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(55, 20)
+        Me.Label3.Size = New System.Drawing.Size(75, 28)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Input 2"
+        Me.Label3.Text = "Value 2"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(191, 281)
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(188, 274)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(49, 20)
+        Me.Label4.Size = New System.Drawing.Size(71, 28)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Result"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(177, 340)
+        Me.Button1.Location = New System.Drawing.Point(188, 384)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(94, 29)
         Me.Button1.TabIndex = 4
@@ -89,7 +96,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(277, 340)
+        Me.Button2.Location = New System.Drawing.Point(315, 384)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(94, 29)
         Me.Button2.TabIndex = 5
@@ -98,7 +105,7 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(392, 340)
+        Me.Button3.Location = New System.Drawing.Point(432, 384)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(111, 29)
         Me.Button3.TabIndex = 6
@@ -107,7 +114,7 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(524, 340)
+        Me.Button4.Location = New System.Drawing.Point(570, 384)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(94, 29)
         Me.Button4.TabIndex = 7
@@ -116,7 +123,7 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(564, 181)
+        Me.Button5.Location = New System.Drawing.Point(570, 181)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(94, 29)
         Me.Button5.TabIndex = 8
@@ -125,7 +132,7 @@ Partial Class Form1
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(564, 272)
+        Me.Button6.Location = New System.Drawing.Point(570, 274)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(94, 29)
         Me.Button6.TabIndex = 9
@@ -134,21 +141,21 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(314, 181)
+        Me.TextBox1.Location = New System.Drawing.Point(347, 181)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(125, 27)
         Me.TextBox1.TabIndex = 10
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(314, 227)
+        Me.TextBox2.Location = New System.Drawing.Point(347, 227)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(125, 27)
         Me.TextBox2.TabIndex = 11
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(314, 274)
+        Me.TextBox3.Location = New System.Drawing.Point(347, 274)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(125, 27)
         Me.TextBox3.TabIndex = 12
@@ -158,7 +165,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlText
-        Me.ClientSize = New System.Drawing.Size(800, 547)
+        Me.ClientSize = New System.Drawing.Size(859, 547)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
