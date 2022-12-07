@@ -3,16 +3,43 @@
 
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnGo.Click
 
-        MsgBox("Hello World")
-        MsgBox("How Are you?")
-        MsgBox("I hope you are well")
+        MsgBox("Welcome")
+        MsgBox("to")
+        MsgBox("the")
+        MsgBox("BV.NET")
+        MsgBox("Programing")
+        MsgBox("Course")
 
-
-
+        MessageBox.Show("Hello")
 
 
 
     End Sub
 
 
+    Private Sub btnVar_Click(sender As Object, e As EventArgs) Handles btnVar.Click
+
+        Dim stFirstName As String
+        Dim stLastName As String
+        Dim stName As String
+
+
+
+
+
+        stName = "Name"
+
+        stFirstName = "Jashedul Islam"
+        stLastName = "Shaun"
+
+        MsgBox("Hello and welcome " & stFirstName & " " & stLastName & " I hope are well.")
+
+
+
+
+    End Sub
+
+    Private Sub DataType_Click(sender As Object, e As EventArgs) Handles DataType.Click
+
+    End Sub
 End Class
