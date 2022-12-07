@@ -1,6 +1,5 @@
 ﻿Public Class Form1
 
-
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnGo.Click
 
         MsgBox("Welcome")
@@ -14,7 +13,6 @@
 
     End Sub
 
-
     Private Sub btnVar_Click(sender As Object, e As EventArgs) Handles btnVar.Click
 
         Dim stFirstName As String
@@ -25,14 +23,10 @@
 
         MsgBox("Hello and welcome " & stFirstName & " " & stLastName & " I hope are well.")
 
-
-
         stFirstName = "Oahidul Islam"
         stLastName = "Sajib"
 
         MsgBox("Hello and welcome " & stFirstName & " " & stLastName & " I hope are well.")
-
-
 
     End Sub
 
