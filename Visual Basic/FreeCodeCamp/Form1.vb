@@ -19,21 +19,16 @@
 
     Private Sub btnVar_Click(sender As Object, e As EventArgs) Handles btnVar.Click
 
+
+
         Dim stFirstName As String
         Dim stLastName As String
-        Dim stName As String
 
-
-
-
-
-        stName = "Name"
 
         stFirstName = "Jashedul Islam"
         stLastName = "Shaun"
 
         MsgBox("Hello and welcome " & stFirstName & " " & stLastName & " I hope are well.")
-
 
 
 
