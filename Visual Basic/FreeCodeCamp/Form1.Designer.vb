@@ -25,6 +25,7 @@ Partial Class Form1
         Me.btnGo = New System.Windows.Forms.Button()
         Me.btnVar = New System.Windows.Forms.Button()
         Me.DataType = New System.Windows.Forms.Button()
+        Me.Input = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnGo
@@ -39,27 +40,37 @@ Partial Class Form1
         '
         'btnVar
         '
-        Me.btnVar.Location = New System.Drawing.Point(236, 51)
+        Me.btnVar.Location = New System.Drawing.Point(183, 51)
         Me.btnVar.Name = "btnVar"
-        Me.btnVar.Size = New System.Drawing.Size(212, 49)
+        Me.btnVar.Size = New System.Drawing.Size(99, 49)
         Me.btnVar.TabIndex = 1
         Me.btnVar.Text = "Variable"
         Me.btnVar.UseVisualStyleBackColor = True
         '
         'DataType
         '
-        Me.DataType.Location = New System.Drawing.Point(58, 148)
+        Me.DataType.Location = New System.Drawing.Point(314, 51)
         Me.DataType.Name = "DataType"
-        Me.DataType.Size = New System.Drawing.Size(190, 57)
+        Me.DataType.Size = New System.Drawing.Size(99, 49)
         Me.DataType.TabIndex = 2
         Me.DataType.Text = "Data Type"
         Me.DataType.UseVisualStyleBackColor = True
+        '
+        'Input
+        '
+        Me.Input.Location = New System.Drawing.Point(58, 285)
+        Me.Input.Name = "Input"
+        Me.Input.Size = New System.Drawing.Size(99, 39)
+        Me.Input.TabIndex = 3
+        Me.Input.Text = "Input"
+        Me.Input.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Input)
         Me.Controls.Add(Me.DataType)
         Me.Controls.Add(Me.btnVar)
         Me.Controls.Add(Me.btnGo)
@@ -72,4 +83,5 @@ Partial Class Form1
     Friend WithEvents btnGo As Button
     Friend WithEvents btnVar As Button
     Friend WithEvents DataType As Button
+    Friend WithEvents Input As Button
 End Class
