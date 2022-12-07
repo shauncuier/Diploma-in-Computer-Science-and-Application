@@ -1,41 +1,28 @@
 ﻿Public Class Form1
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub btnCal_Click(sender As Object, e As EventArgs) Handles btnCal.Click
 
-    End Sub
+        Dim decPrice As Decimal
+        Dim iQuantity As Integer
+        Dim decDiscount As Decimal
 
-    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim decTotatCost As Decimal
 
-        Dim dblNumber1 As Double
-        Dim dblNumber2 As Double
 
-        Dim dblResult As Double
+        decPrice = 5
+        iQuantity = 10
+        decDiscount = 2
 
-        dblNumber1 = txtNum1.Text
-        dblNumber2 = txtNum2.Text
 
-        dblResult = dblNumber1 + dblNumber2
 
-        MsgBox(dblResult)
+        decTotatCost = (decPrice - decDiscount) * iQuantity
 
-        dblResult = dblNumber1 - dblNumber2
+        ' BO(DM)(AS) - Brackets Order Div Mult Add Sub
 
-        MsgBox(dblResult)
+        MsgBox(decTotatCost)
 
-        dblResult = dblNumber1 * dblNumber2
 
-        MsgBox(dblResult)
 
-        dblResult = dblNumber1 / dblNumber2
 
-        MsgBox(dblResult)
-
-        dblResult = dblNumber1 \ dblNumber2
-
-        MsgBox(dblResult)
-
-        dblResult = dblNumber1 Mod dblNumber2
-
-        MsgBox(dblResult)
 
     End Sub
 End Class

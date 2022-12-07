@@ -22,74 +22,30 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblNumber1 = New System.Windows.Forms.Label()
-        Me.lblNumber2 = New System.Windows.Forms.Label()
-        Me.txtNum2 = New System.Windows.Forms.TextBox()
-        Me.txtNum1 = New System.Windows.Forms.TextBox()
-        Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.btnCal = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'lblNumber1
+        'btnCal
         '
-        Me.lblNumber1.AutoSize = True
-        Me.lblNumber1.Location = New System.Drawing.Point(122, 101)
-        Me.lblNumber1.Name = "lblNumber1"
-        Me.lblNumber1.Size = New System.Drawing.Size(65, 16)
-        Me.lblNumber1.TabIndex = 0
-        Me.lblNumber1.Text = "Number 1"
-        '
-        'lblNumber2
-        '
-        Me.lblNumber2.AutoSize = True
-        Me.lblNumber2.Location = New System.Drawing.Point(122, 148)
-        Me.lblNumber2.Name = "lblNumber2"
-        Me.lblNumber2.Size = New System.Drawing.Size(65, 16)
-        Me.lblNumber2.TabIndex = 1
-        Me.lblNumber2.Text = "Number 2"
-        '
-        'txtNum2
-        '
-        Me.txtNum2.Location = New System.Drawing.Point(206, 148)
-        Me.txtNum2.Name = "txtNum2"
-        Me.txtNum2.Size = New System.Drawing.Size(175, 22)
-        Me.txtNum2.TabIndex = 2
-        '
-        'txtNum1
-        '
-        Me.txtNum1.Location = New System.Drawing.Point(206, 101)
-        Me.txtNum1.Name = "txtNum1"
-        Me.txtNum1.Size = New System.Drawing.Size(175, 22)
-        Me.txtNum1.TabIndex = 3
-        '
-        'btnCalculate
-        '
-        Me.btnCalculate.Location = New System.Drawing.Point(313, 201)
-        Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(68, 24)
-        Me.btnCalculate.TabIndex = 4
-        Me.btnCalculate.Text = "Calculate"
-        Me.btnCalculate.UseVisualStyleBackColor = True
+        Me.btnCal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCal.Location = New System.Drawing.Point(303, 85)
+        Me.btnCal.Name = "btnCal"
+        Me.btnCal.Size = New System.Drawing.Size(133, 47)
+        Me.btnCal.TabIndex = 0
+        Me.btnCal.Text = "Calculate"
+        Me.btnCal.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.btnCalculate)
-        Me.Controls.Add(Me.txtNum1)
-        Me.Controls.Add(Me.txtNum2)
-        Me.Controls.Add(Me.lblNumber2)
-        Me.Controls.Add(Me.lblNumber1)
+        Me.Controls.Add(Me.btnCal)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents lblNumber1 As Label
-    Friend WithEvents lblNumber2 As Label
-    Friend WithEvents txtNum2 As TextBox
-    Friend WithEvents txtNum1 As TextBox
-    Friend WithEvents btnCalculate As Button
+    Friend WithEvents btnCal As Button
 End Class
